@@ -137,11 +137,9 @@ class Challenge {
 
 		}
 
-		// Return the running total at the end (because we're calculating money,
+		// Requirement: "Return the running total at the end" (because we're calculating money,
 		// round the final amount back to 2 decimal places)
-		// TODO: This is not right... Fix it to actually round and not truncate
-		DecimalFormat decFormat = new DecimalFormat("######.##");
-		montlyTotal = Double.valueOf(decFormat.format(montlyTotal));
+		montlyTotal = Math.round(montlyTotal*100)/100;
 		return montlyTotal;
 	}
 
