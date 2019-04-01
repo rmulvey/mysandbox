@@ -85,16 +85,24 @@ class Challenge {
 	 * last step.)
 	 * 
 	 * @see Subscription
-	 * @param month
-	 *            = Integer month to bill (values 1-12) for Jan thru Dec
-	 * @param activeSubscription
-	 * @param users
-	 *            list of users to calculate for
-	 * @return Total monthly bill. Amount in dollars for the given users for the
-	 *         given month
+	 * 
+	 * @param month - Will always be a valid YYYY-MM combination,
+	 *  e.g. 2019-01 for January 2019. You will not need to handle any errors around this.
+	 *  
+	 * @param activeSubscription - Will contain the key monthly_price_in_dollars. May be null. 
+	 * If present, the active_subscription will be active for the entire month, so you do 
+	 * not need to worry about a subscription ending mid-month.
+	 * 
+	 * @param users - Contains user information as an array. May be empty, but not null. 
+	 * Users may become active or inactive over the course of a month, as indicated by the 
+	 * activated_on and deactivated_on date properties.
+	 * 
+	 * @return This method should return the total monthly bill for the customer, rounded 
+	 * to 2 decimal places. 
 	 */
-	public static double billFor(int month, Subscription activeSubscription, User[] users) {
+	public static double billFor(String month, Subscription activeSubscription, User[] users) {
 		// TODO: Add some argument validation
+		// TODO: Review the parameter values and update code as needed
 		double montlyTotal = 0.0;
 
 		for (int i = 0; i < users.length; i++) {
