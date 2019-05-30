@@ -1,0 +1,1002 @@
+-- root-types-contained: SystemModel_c,PackageableElement_c,DataType_c,CoreDataType_c,UserDataType_c
+-- BP 7.1 content: StreamData syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO S_SYS
+	VALUES (1,
+	'CSOClientListener',
+	1);
+INSERT INTO EP_PKG
+	VALUES (2,
+	1,
+	1,
+	'CSOListener',
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES (3,
+	1,
+	2,
+	0,
+	2);
+INSERT INTO C_C
+	VALUES (3,
+	0,
+	0,
+	'CSOListener',
+	'',
+	0,
+	0,
+	0,
+	'');
+INSERT INTO C_PO
+	VALUES (4,
+	3,
+	'Port1',
+	0,
+	0);
+INSERT INTO C_IR
+	VALUES (5,
+	6,
+	0,
+	4);
+INSERT INTO C_R
+	VALUES (5,
+	'connection',
+	'',
+	'Unnamed Interface',
+	'CSOListener::Port1::connection');
+INSERT INTO SPR_REP
+	VALUES (7,
+	8,
+	5);
+INSERT INTO SPR_RO
+	VALUES (7,
+	'connect',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO ACT_ROB
+	VALUES (9,
+	7);
+INSERT INTO ACT_ACT
+	VALUES (9,
+	'interface operation',
+	0,
+	10,
+	0,
+	0,
+	'Port1::connection::connect',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (10,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	9,
+	0);
+INSERT INTO SPR_REP
+	VALUES (11,
+	12,
+	5);
+INSERT INTO SPR_RO
+	VALUES (11,
+	'disconnect',
+	'',
+	'',
+	1,
+	0);
+INSERT INTO ACT_ROB
+	VALUES (13,
+	11);
+INSERT INTO ACT_ACT
+	VALUES (13,
+	'interface operation',
+	0,
+	14,
+	0,
+	0,
+	'Port1::connection::disconnect',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (14,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	13,
+	0);
+INSERT INTO PE_PE
+	VALUES (15,
+	1,
+	0,
+	3,
+	7);
+INSERT INTO EP_PKG
+	VALUES (15,
+	0,
+	1,
+	'CSOListener',
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES (16,
+	1,
+	15,
+	0,
+	4);
+INSERT INTO O_OBJ
+	VALUES (16,
+	'CSOConnection',
+	1,
+	'CSOConnection',
+	'',
+	0);
+INSERT INTO O_NBATTR
+	VALUES (17,
+	16);
+INSERT INTO O_BATTR
+	VALUES (17,
+	16);
+INSERT INTO O_ATTR
+	VALUES (17,
+	16,
+	0,
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	18,
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	16);
+INSERT INTO O_ID
+	VALUES (1,
+	16);
+INSERT INTO O_ID
+	VALUES (2,
+	16);
+INSERT INTO SM_ISM
+	VALUES (19,
+	16);
+INSERT INTO SM_SM
+	VALUES (19,
+	'',
+	0);
+INSERT INTO SM_MOORE
+	VALUES (19);
+INSERT INTO SM_LEVT
+	VALUES (20,
+	19,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (20,
+	19,
+	0);
+INSERT INTO SM_EVT
+	VALUES (20,
+	19,
+	0,
+	1,
+	'startup',
+	0,
+	'',
+	'CSOConnection1',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (21,
+	19,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (21,
+	19,
+	0);
+INSERT INTO SM_EVT
+	VALUES (21,
+	19,
+	0,
+	2,
+	'connection requested',
+	0,
+	'',
+	'CSOConnection2',
+	'');
+INSERT INTO SM_LEVT
+	VALUES (22,
+	19,
+	0);
+INSERT INTO SM_SEVT
+	VALUES (22,
+	19,
+	0);
+INSERT INTO SM_EVT
+	VALUES (22,
+	19,
+	0,
+	3,
+	'connected',
+	0,
+	'',
+	'CSOConnection3',
+	'');
+INSERT INTO SM_STATE
+	VALUES (23,
+	19,
+	0,
+	'Idle',
+	1,
+	0);
+INSERT INTO SM_CH
+	VALUES (23,
+	20,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (23,
+	20,
+	19,
+	0);
+INSERT INTO SM_SEME
+	VALUES (23,
+	21,
+	19,
+	0);
+INSERT INTO SM_CH
+	VALUES (23,
+	22,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (23,
+	22,
+	19,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (24,
+	19,
+	23);
+INSERT INTO SM_AH
+	VALUES (24,
+	19);
+INSERT INTO SM_ACT
+	VALUES (24,
+	19,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (25,
+	19,
+	24);
+INSERT INTO ACT_ACT
+	VALUES (25,
+	'state',
+	0,
+	26,
+	0,
+	0,
+	'CSOConnection::Idle',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (26,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	25,
+	0);
+INSERT INTO SM_STATE
+	VALUES (27,
+	19,
+	0,
+	'connecting',
+	2,
+	0);
+INSERT INTO SM_CH
+	VALUES (27,
+	20,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (27,
+	20,
+	19,
+	0);
+INSERT INTO SM_CH
+	VALUES (27,
+	21,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (27,
+	21,
+	19,
+	0);
+INSERT INTO SM_SEME
+	VALUES (27,
+	22,
+	19,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (28,
+	19,
+	27);
+INSERT INTO SM_AH
+	VALUES (28,
+	19);
+INSERT INTO SM_ACT
+	VALUES (28,
+	19,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (29,
+	19,
+	28);
+INSERT INTO ACT_ACT
+	VALUES (29,
+	'state',
+	0,
+	30,
+	0,
+	0,
+	'CSOConnection::connecting',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (30,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	29,
+	0);
+INSERT INTO SM_STATE
+	VALUES (31,
+	19,
+	0,
+	'Connected',
+	3,
+	0);
+INSERT INTO SM_CH
+	VALUES (31,
+	20,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (31,
+	20,
+	19,
+	0);
+INSERT INTO SM_CH
+	VALUES (31,
+	21,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (31,
+	21,
+	19,
+	0);
+INSERT INTO SM_CH
+	VALUES (31,
+	22,
+	19,
+	0,
+	'');
+INSERT INTO SM_SEME
+	VALUES (31,
+	22,
+	19,
+	0);
+INSERT INTO SM_MOAH
+	VALUES (32,
+	19,
+	31);
+INSERT INTO SM_AH
+	VALUES (32,
+	19);
+INSERT INTO SM_ACT
+	VALUES (32,
+	19,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_SAB
+	VALUES (33,
+	19,
+	32);
+INSERT INTO ACT_ACT
+	VALUES (33,
+	'state',
+	0,
+	34,
+	0,
+	0,
+	'CSOConnection::Connected',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (34,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	33,
+	0);
+INSERT INTO SM_CRTXN
+	VALUES (35,
+	19,
+	20,
+	0);
+INSERT INTO SM_TAH
+	VALUES (36,
+	19,
+	35);
+INSERT INTO SM_AH
+	VALUES (36,
+	19);
+INSERT INTO SM_ACT
+	VALUES (36,
+	19,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (37,
+	19,
+	36);
+INSERT INTO ACT_ACT
+	VALUES (37,
+	'transition',
+	0,
+	38,
+	0,
+	0,
+	'CSOConnection1: startup',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (38,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	37,
+	0);
+INSERT INTO SM_TXN
+	VALUES (35,
+	19,
+	23,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (39,
+	19,
+	23,
+	21,
+	0);
+INSERT INTO SM_TAH
+	VALUES (40,
+	19,
+	39);
+INSERT INTO SM_AH
+	VALUES (40,
+	19);
+INSERT INTO SM_ACT
+	VALUES (40,
+	19,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (41,
+	19,
+	40);
+INSERT INTO ACT_ACT
+	VALUES (41,
+	'transition',
+	0,
+	42,
+	0,
+	0,
+	'CSOConnection2: connection requested',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (42,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	41,
+	0);
+INSERT INTO SM_TXN
+	VALUES (39,
+	19,
+	27,
+	0);
+INSERT INTO SM_NSTXN
+	VALUES (43,
+	19,
+	27,
+	22,
+	0);
+INSERT INTO SM_TAH
+	VALUES (44,
+	19,
+	43);
+INSERT INTO SM_AH
+	VALUES (44,
+	19);
+INSERT INTO SM_ACT
+	VALUES (44,
+	19,
+	1,
+	'',
+	'',
+	0);
+INSERT INTO ACT_TAB
+	VALUES (45,
+	19,
+	44);
+INSERT INTO ACT_ACT
+	VALUES (45,
+	'transition',
+	0,
+	46,
+	0,
+	0,
+	'CSOConnection3: connected',
+	0);
+INSERT INTO ACT_BLK
+	VALUES (46,
+	0,
+	0,
+	0,
+	'',
+	'',
+	'',
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	45,
+	0);
+INSERT INTO SM_TXN
+	VALUES (43,
+	19,
+	31,
+	0);
+INSERT INTO EP_PKG
+	VALUES (47,
+	1,
+	1,
+	'Interfaces',
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES (6,
+	1,
+	47,
+	0,
+	6);
+INSERT INTO C_I
+	VALUES (6,
+	0,
+	'connection',
+	'');
+INSERT INTO C_EP
+	VALUES (8,
+	6,
+	-1,
+	'connect',
+	'');
+INSERT INTO C_IO
+	VALUES (8,
+	48,
+	'connect',
+	'',
+	0,
+	'',
+	0);
+INSERT INTO C_EP
+	VALUES (12,
+	6,
+	-1,
+	'disconnect',
+	'');
+INSERT INTO C_IO
+	VALUES (12,
+	48,
+	'disconnect',
+	'',
+	0,
+	'',
+	8);
+INSERT INTO PE_PE
+	VALUES (48,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (48,
+	0,
+	'void',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (48,
+	0);
+INSERT INTO PE_PE
+	VALUES (49,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (49,
+	0,
+	'boolean',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (49,
+	1);
+INSERT INTO PE_PE
+	VALUES (50,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (50,
+	0,
+	'integer',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (50,
+	2);
+INSERT INTO PE_PE
+	VALUES (51,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (51,
+	0,
+	'real',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (51,
+	3);
+INSERT INTO PE_PE
+	VALUES (52,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (52,
+	0,
+	'string',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (52,
+	4);
+INSERT INTO PE_PE
+	VALUES (53,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (53,
+	0,
+	'unique_id',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (53,
+	5);
+INSERT INTO PE_PE
+	VALUES (18,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (18,
+	0,
+	'state<State_Model>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (18,
+	6);
+INSERT INTO PE_PE
+	VALUES (54,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (54,
+	0,
+	'same_as<Base_Attribute>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (54,
+	7);
+INSERT INTO PE_PE
+	VALUES (55,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (55,
+	0,
+	'inst_ref<Object>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (55,
+	8);
+INSERT INTO PE_PE
+	VALUES (56,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (56,
+	0,
+	'inst_ref_set<Object>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (56,
+	9);
+INSERT INTO PE_PE
+	VALUES (57,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (57,
+	0,
+	'inst<Event>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (57,
+	10);
+INSERT INTO PE_PE
+	VALUES (58,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (58,
+	0,
+	'inst<Mapping>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (58,
+	11);
+INSERT INTO PE_PE
+	VALUES (59,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (59,
+	0,
+	'inst_ref<Mapping>',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (59,
+	12);
+INSERT INTO PE_PE
+	VALUES (60,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (60,
+	0,
+	'component_ref',
+	'',
+	'');
+INSERT INTO S_CDT
+	VALUES (60,
+	13);
+INSERT INTO PE_PE
+	VALUES (61,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (61,
+	0,
+	'date',
+	'',
+	'');
+INSERT INTO S_UDT
+	VALUES (61,
+	58,
+	1,
+	'');
+INSERT INTO PE_PE
+	VALUES (62,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (62,
+	0,
+	'inst_ref<Timer>',
+	'',
+	'');
+INSERT INTO S_UDT
+	VALUES (62,
+	59,
+	3,
+	'');
+INSERT INTO PE_PE
+	VALUES (63,
+	1,
+	0,
+	0,
+	3);
+INSERT INTO S_DT
+	VALUES (63,
+	0,
+	'timestamp',
+	'',
+	'');
+INSERT INTO S_UDT
+	VALUES (63,
+	58,
+	2,
+	'');

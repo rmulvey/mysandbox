@@ -1,0 +1,12 @@
+WARNING:  Identify a package to build using MarkSystemConfigurationPackage in system.mark.
+WARNING:  Interfaces has been selected arbitrarily as the build configuration.
+Enabling detection of empty handles for component(s) *.
+Action statement tracing enabled for component CSOListener.
+Enabling state transition tracing for component(s) *.
+Analyzing model and making optimizations....
+ attributes read
+ attributes written
+translating control statements
+translating other statements
+rolling up statements into action bodies
+done translating statements
