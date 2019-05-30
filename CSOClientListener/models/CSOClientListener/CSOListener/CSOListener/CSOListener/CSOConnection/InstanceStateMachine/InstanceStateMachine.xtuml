@@ -1647,8 +1647,8 @@ INSERT INTO SM_AH
 INSERT INTO SM_ACT
 	VALUES ("22beef51-aa2d-4072-849a-2f8f5e353ad6",
 	"8759120a-5980-4b9a-87fa-c09bdbdb86dc",
-	3,
-	'',
+	1,
+	'// Signal ClientSession::active???',
 	'',
 	0);
 INSERT INTO SM_MOAH

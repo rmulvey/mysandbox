@@ -2,9 +2,9 @@
 
 INSERT INTO O_OBJ
 	VALUES ("b996565f-d99c-4bac-8c7c-8c804abe6ab7",
-	'ClientTransaction',
+	'ClientSession',
 	2,
-	'ClientTransaction',
+	'ClientSession',
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
