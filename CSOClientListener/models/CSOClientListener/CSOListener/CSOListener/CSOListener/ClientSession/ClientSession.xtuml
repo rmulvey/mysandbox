@@ -1,0 +1,50 @@
+-- BP 7.1.6 content: ModelClass syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO O_OBJ
+	VALUES ("b996565f-d99c-4bac-8c7c-8c804abe6ab7",
+	'ClientSession',
+	2,
+	'ClientSession',
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_NBATTR
+	VALUES ("b4838c13-abf3-4d92-b29f-874c13237aa0",
+	"b996565f-d99c-4bac-8c7c-8c804abe6ab7");
+INSERT INTO O_BATTR
+	VALUES ("b4838c13-abf3-4d92-b29f-874c13237aa0",
+	"b996565f-d99c-4bac-8c7c-8c804abe6ab7");
+INSERT INTO O_ATTR
+	VALUES ("b4838c13-abf3-4d92-b29f-874c13237aa0",
+	"b996565f-d99c-4bac-8c7c-8c804abe6ab7",
+	"00000000-0000-0000-0000-000000000000",
+	'current_state',
+	'',
+	'',
+	'current_state',
+	0,
+	"ba5eda7a-def5-0000-0000-000000000006",
+	'',
+	'');
+INSERT INTO O_ID
+	VALUES (0,
+	"b996565f-d99c-4bac-8c7c-8c804abe6ab7");
+INSERT INTO O_ID
+	VALUES (1,
+	"b996565f-d99c-4bac-8c7c-8c804abe6ab7");
+INSERT INTO O_ID
+	VALUES (2,
+	"b996565f-d99c-4bac-8c7c-8c804abe6ab7");
+INSERT INTO PE_PE
+	VALUES ("b996565f-d99c-4bac-8c7c-8c804abe6ab7",
+	1,
+	"0134c08c-1cb4-45fc-90bb-7ace49de725b",
+	"00000000-0000-0000-0000-000000000000",
+	4);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("0134c08c-1cb4-45fc-90bb-7ace49de725b",
+	"00000000-0000-0000-0000-000000000000",
+	"cc60b714-5a20-42c4-ab24-7f5c4f86f9e4",
+	'CSOListener',
+	'',
+	0,
+	'../CSOListener.xtuml');
